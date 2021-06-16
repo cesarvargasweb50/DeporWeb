@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Autentificación con Google</title>
-
+	<title> DeporWEB</title>
 <body class="text-center">
 
 <main class="form-signin">
 
-    <h1 class="h3 mb-3 fw-normal" id="user_name">Autentificación con Google</h1>
+    <h1 class="h3 mb-3 fw-normal" id="user_name">DeporWEB</h1>
 
-    <button onclick="loginWithGoogle()" class="w-100 btn btn-lg btn-primary" id="login_btn">Iniciar con Google</button>
+    <button onclick="IniciarconGoogle()" class="w-100 btn btn-lg btn-primary" id="login_btn">Iniciar sesion con Google</button>
 
     <button onclick="logout()" style="display: none;" class="w-100 btn btn-lg btn-danger" id="logout_btn">Salir</button>
 </main>
@@ -72,7 +71,6 @@
     });
     }
 
-    //agregar datos del usuario
     var updateUser = function(user){
       user_name_h1.innerHTML = "Hola, " + user.displayName;
       user_image.src = user.photoURL;
@@ -88,7 +86,6 @@
         logout_btn.style.display = "none";
 
     }).catch(function(error) {
-      // An error happened.
     });
 
     }
@@ -97,4 +94,5 @@
   </script>
 
 </body>
+	
 </html>
