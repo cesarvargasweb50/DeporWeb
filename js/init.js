@@ -8,5 +8,5 @@ firebase.initializeApp({
     storageBucket: "deporweb50.appspot.com",
     messagingSenderId: "28702197046",
     appId: "1:28702197046:web:3bcbc8090902625f5e5f97",
-    measurementId: "G-81RFLKTZFT""
+    measurementId: "G-81RFLKTZFT"
 });
