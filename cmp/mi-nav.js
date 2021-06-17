@@ -35,29 +35,30 @@ class MiNav extends HTMLElement {
       const roles =
         await cargaRoles(
           usu.email);
-      /* Enlaces para solo
-       * para clientes. */
-      if (roles.has("Cliente")) {
+      
+      // Checa si es administrador
+   
+      if (roles.has("Administrador")) {
         html += /* html */
-          `<li>
-            <a href=
-              "chat.html">Chat</a>
-          </li>`;
+        `<li>
+          <a href="Administrador.html">Administrador</a>
+         </li>`;
       }
-      /* Enlaces para solo
-       * administradores.
-       */
-      if (roles.has(
-        "Administrador")) {
-        html += /* html */
-          `<li>
-            <a href=
-"pasatiempos.html">Pasatiempos</a>
-          </li>
-          <li>
-            <a href=
-      "usuarios.html">Usuarios</a>
-          </li>`;
+      //checa si es deportista
+      if (roles.has("Deportista")) {
+         html += /* html */
+      `<li>
+        <a href="Deportista.html">Deportista</a>
+       </li>`;
+      }
+      
+      // Checa si es reclutador
+
+      if (roles.has("Reclutador")) {
+         html += /* html */
+      `<li>
+        <a href="Reclutador.html">Reclutador</a>
+       </li>`;
       }
       this.ul.innerHTML += html;
     }
