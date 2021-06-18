@@ -25,8 +25,7 @@ export async function
     await daoUsuario.
       doc(id).
       set({
-        "","","","","","","","",
-        //  pasatiempoId, rolIds
+        "uno","dos","tres","cuatro","cinco","seis"
     });
     const avatar =
       formData.get("avatar");
