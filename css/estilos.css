@@ -34,23 +34,27 @@ header {
   gap: 0.5rem;
 }
 
-.menu {
 
-  display: flex;
-  align-items: center;
-  align-content: flex-end;
-  float:left;
-  width:50%;
-  padding:5px 10px;
-  background-color:#000;
-  border:2px solid #000;
-  text-align:center;
-  color:#fff;
-  font-weight: bold;
-  font-size: 2.7rem;
-  
+*{margin:0;padding:0;box-sizing:border-box;font-size:0;}
+            
+nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+} 
+nav li{
+    display:inline-block;
+    width:10%;
+    padding:5px 10px;
+    background-color:#000;
+    border:1px solid #000;
+    text-align:center;
+    color:#fff;
 }
-
+nav li:hover{
+    background-color:#fff;
+    color:#000;
+}
 
 header input {
   flex-grow: 1;
