@@ -9,23 +9,7 @@ import {
 } from "../lib/util.js";
 
 class MiNav extends HTMLElement {
-  connectedCallback() {
-    /*
-    //this.innerHTML =  html 
-      `<ul>
-        <li>
-          <a href="index.html">
-            Hola</a>
-        </li>
-      </ul>`; 
-    this.ul =
-      this.querySelector("ul");
-    getAuth().onAuthStateChanged(
-      usuario => this.
-        cambiaUsuario(usuario),
-      muestraError); */
-  }
-
+  
   /**
    * @param {import(
       "../lib/tiposFire.js").User}
