@@ -40,13 +40,13 @@ getAuth().onAuthStateChanged(
 async function
   muestraSesión(usuario) {
   if (usuario && usuario.email) {
-    // Usuario aceptado.
+   /* // Usuario aceptado.
     forma.email.value =
       usuario.email || "";
     forma.nombre.value =
       usuario.displayName || "";
     avatar.src =
-      usuario.photoURL || "";
+      usuario.photoURL || ""; */
     forma.terminarSesión.
       addEventListener(
         "click", terminaSesión);
