@@ -4,12 +4,6 @@ import {
 import {
   subeStorage
 } from "../lib/storage.js";
-import {
-  cod, getForánea, muestraError
-} from "../lib/util.js";
-import {
-  muestraUsuarios
-} from "./navegacion.js";
 
 
 const firestore = getFirestore();
@@ -19,19 +13,23 @@ const daoUsuario = firestore.
   collection("Usuario");
 
 /**
- * @param {Event} nom
+ * @param {Event} evt
  * @param {FormData} formData
  
  * @param {string} id  */
 export async function
-  guardaUsuario(id, nombre, deporte, posicion, pais, telefono) {
+  guardaUsuario(evt, formData, id) {
   try {
     const rolIds =
       formData.getAll("rolIds");
     await daoUsuario.
       doc(id).
       set({
-          nombre,deporte,posicion,pais,telefono
+          formData.get("nom"),
+          formData.get("dep"),
+          formData.get("pos"),
+          formData.get("pais"),
+          formData.get("tel"), 
       });
     const avatar =
       formData.get("avatar");
