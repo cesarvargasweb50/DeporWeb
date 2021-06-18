@@ -29,7 +29,7 @@ export async function
           formData.get("dep"),
           formData.get("pos"),
           formData.get("pais"),
-          formData.get("tel"), 
+          formData.get("tel")
       });
     const avatar =
       formData.get("avatar");
