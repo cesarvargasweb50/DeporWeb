@@ -5,33 +5,22 @@ import {
   getString,
 } from "../lib/util.js";
 import {
+  tieneRol
+} from "./seguridad.js";
+import {
   guardaUsuario,
 } from "./usuarios.js";
 
 /** @type {HTMLFormElement} */
 const forma = document["forma"];
 
-/**
- * @param {Event} evt
- * @param {FormData} formData
- * @param {string} id  */
-export async function
-  guardaUsuario(evt, formData,
-    id) {
-  try {
-    evt.preventDefault();
-    const rolIds =
-      formData.getAll("rolIds");
-    await daoUsuario.
-      doc(id).
-      set({
-        "uno","dos","tres","cuatro","cinco","seis"
-    });
-    const avatar =
-      formData.get("avatar");
-    await subeStorage(id, avatar);
 
-  } catch (e) {
-    muestraError(e);
-  }
+/** @param {Event} evt */
+async function guarda(evt) {
+  const formData =
+    new FormData(forma);
+  const id = getString(
+    formData, "cue").trim();
+  await guardaUsuario(evt,
+    formData, id);
 }
