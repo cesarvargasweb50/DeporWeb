@@ -14,5 +14,3 @@ const forma = document["forma"];
 /** @type {HTMLImageElement} */
 const avatar = document.
   querySelector("#avatar");
-
-
