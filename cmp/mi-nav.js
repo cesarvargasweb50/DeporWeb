@@ -13,8 +13,8 @@ class MiNav extends HTMLElement {
     this.innerHTML = /* html */
       `<ul>
         <li>
-          <a href="Administrador.html">
-            LOPEZ</a>
+          <a href="index.html">
+            Hola</a>
         </li>
       </ul>`;
     this.ul =
