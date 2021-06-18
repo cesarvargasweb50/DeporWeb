@@ -34,6 +34,18 @@ header {
   gap: 0.5rem;
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+  align-content: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 0.5rem;
+  gap: 1.5rem;
+  font-size: 4.2rem;
+
+}
+
+
 header input {
   flex-grow: 1;
 }
