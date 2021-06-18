@@ -26,8 +26,13 @@ export async function
       formData.getAll("rolIds");
     await daoUsuario.
       doc(id).
-      set({
-        "uno"
+      set({        
+          depor_dep: "Futbol",
+          id_dep: "100",
+          nom_dep: "Christiano Rolando",
+          pais_dep: "Mexico ",
+          posi_dep: "Delantero",
+          tel_dep: "5578987451",
       });
     const avatar =
       formData.get("avatar");
