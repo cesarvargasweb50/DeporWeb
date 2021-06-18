@@ -21,6 +21,7 @@ async function guarda(evt) {
     new FormData(forma);
   const id = getString(
     formData, "cue").trim();
+  console.log("El id es: %i,i");
   await guardaUsuario(evt,
     formData, id);
 }
