@@ -35,7 +35,7 @@ header {
 }
 
 
-.herramientas {
+.menu {
   display: flex;
   flex-flow: wrap;
   align-items: center;
