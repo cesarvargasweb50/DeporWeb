@@ -10,19 +10,20 @@ import {
 
 class MiNav extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = /* html */
+    /*
+    //this.innerHTML =  html 
       `<ul>
         <li>
           <a href="index.html">
             Hola</a>
         </li>
-      </ul>`;
+      </ul>`; 
     this.ul =
       this.querySelector("ul");
     getAuth().onAuthStateChanged(
       usuario => this.
         cambiaUsuario(usuario),
-      muestraError);
+      muestraError); */
   }
 
   /**
