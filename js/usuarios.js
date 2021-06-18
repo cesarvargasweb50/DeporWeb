@@ -32,7 +32,7 @@ export async function
           nom_dep: "Christiano Rolando",
           pais_dep: "Mexico ",
           posi_dep: "Delantero",
-          tel_dep: "5578987451",
+          tel_dep: "5578987451"
       });
     const avatar =
       formData.get("avatar");
