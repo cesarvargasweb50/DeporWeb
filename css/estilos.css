@@ -35,16 +35,41 @@ header {
 }
 
 
-.menu {
-  display: flex;
-  flex-flow: wrap;
-  align-items: center;
-  align-content: flex-end;
-  justify-content: flex-end;
-  margin-top: 0.5rem;
-  padding: 0.2rem 0.4rem;
-  font-size: 0.8rem;
+.fancyNav{
+    /* Affects the UL element */
+    overflow: hidden;
+    display: inline-block;
+
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.6);
+    -moz-box-shadow: 0 0 4px rgba(255, 255, 255, 0.6);
+    -webkit-box-shadow: 0 0 4px rgba(255, 255, 255, 0.6);
 }
+
+.fancyNav li{
+
+    background-color: #f0f0f0;
+    background-image: -webkit-gradient(linear,left top, left bottom,from(#fefefe), color-stop(0.5,#f0f0f0), color-stop(0.51, #e6e6e6));
+    background-image: -moz-linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
+    background-image: -o-linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
+    background-image: -ms-linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
+    background-image: linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
+
+    border-right: 1px solid rgba(9, 9, 9, 0.125);
+
+    box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
+    -moz-box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
+    -webkit-box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
+
+    position:relative;
+
+    float: left;
+    list-style: none;
+}
+
 
 header input {
   flex-grow: 1;
