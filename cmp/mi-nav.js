@@ -10,6 +10,15 @@ import {
 
 class MiNav extends HTMLElement {
    connectedCallback() {
+    this.innerHTML = /* html */
+      `<ul>
+        <li>
+        </li>
+      </ul>`;
+    this.ul =
+      this.querySelector("ul");
+
+     
     getAuth().onAuthStateChanged(
       usuario => this.
         cambiaUsuario(usuario),
