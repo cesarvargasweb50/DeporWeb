@@ -64,7 +64,7 @@ export async function
           nom_dep: nombre,
           pais_dep: pais,
           posi_dep: posicion,
-          tel_dep: tel
+          tel_dep: "5578987451"
       });
     
     const avatar =
