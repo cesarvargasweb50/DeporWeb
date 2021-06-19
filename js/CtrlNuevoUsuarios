@@ -9,7 +9,7 @@ import {
 } from "./seguridad.js";
 import {
   guardaUsuario,
-} from "./usuarios.js";
+} from "./usuario.js";
 /** @type {HTMLFormElement} */
 const forma = document["forma3"];
 
