@@ -62,7 +62,7 @@ export async function
           pais_dep: pais,
           posi_dep: posicion,
           tel_dep: tel
-      });*/
+      });
     
     const avatar =
       formData.get("avatar");
