@@ -22,11 +22,12 @@ export async function
     id) {
   try {
     evt.preventDefault();
-    console.log("El id es: %o",id);
-    console.log("El formData es: %o",formData);
+    alert(id);
+    alert(formData);
+    
     const rolIds =
       formData.getAll("rolIds");
-    console.log("HOLLAAAAA");
+    alert(rolIds);
     await daoUsuario.
       doc(id).
       set({        
