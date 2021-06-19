@@ -9,7 +9,13 @@ import {
 } from "../lib/util.js";
 
 class MiNav extends HTMLElement {
-  
+   connectedCallback() {
+    getAuth().onAuthStateChanged(
+      usuario => this.
+        cambiaUsuario(usuario),
+      muestraError);
+  }
+
   /**
    * @param {import(
       "../lib/tiposFire.js").User}
