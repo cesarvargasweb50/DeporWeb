@@ -24,7 +24,7 @@ export async function
     evt.preventDefault();
     alert(id);
     alert(formData);
-    
+    /*
     const rolIds =
       formData.getAll("rolIds");
     alert(rolIds);
@@ -32,12 +32,38 @@ export async function
       doc(id).
       set({        
           depor_dep: "Futbol",
-          id_dep: "100",
           nom_dep: "Christiano Rolando",
           pais_dep: "Mexico ",
           posi_dep: "Delantero",
           tel_dep: "5578987451"
-      });
+      });*/
+
+      const nombre =
+      formData.get("nom");
+
+      const deporte =
+      formData.get("dep");
+
+      const posicion =
+      formData.get("pos");
+    
+       const pais =
+      formData.get("pais");
+
+      const telefono =
+      formData.get("tel");
+       
+
+    await daoUsuario.
+      doc(id).
+      set({        
+          depor_dep: deporte,
+          nom_dep: nombre,
+          pais_dep: pais,
+          posi_dep: posicion,
+          tel_dep: tel
+      });*/
+    
     const avatar =
       formData.get("avatar");
     await subeStorage(id, avatar);
