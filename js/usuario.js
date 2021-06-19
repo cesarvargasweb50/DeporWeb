@@ -41,7 +41,7 @@ export async function
       set({        
           nom_rec: nombre,
           equipo_rec: equipo,
-          depo_rec: "Futbol",
+          depo_rec: deporte,
           status_rec: 1
       });
     
