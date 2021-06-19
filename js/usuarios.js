@@ -27,19 +27,6 @@ export async function
     evt.preventDefault();
     alert(id);
     alert(formData);
-    /*
-    const rolIds =
-      formData.getAll("rolIds");
-    alert(rolIds);
-    await daoUsuario.
-      doc(id).
-      set({        
-          depor_dep: "Futbol",
-          nom_dep: "Christiano Rolando",
-          pais_dep: "Mexico ",
-          posi_dep: "Delantero",
-          tel_dep: "5578987451"
-      });*/
 
       const nombre =
       formData.get("nom");
