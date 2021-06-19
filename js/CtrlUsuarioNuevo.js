@@ -19,6 +19,8 @@ const forma = document["forma"];
 async function guarda(evt) {
   const formData =
     new FormData(forma);
+  console.log("El id es: %o,i");
+
   const id = getString(
     formData, "cue").trim();
   console.log("El id es: %i,i");
