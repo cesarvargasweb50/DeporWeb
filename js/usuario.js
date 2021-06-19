@@ -33,15 +33,16 @@ export async function
       formData.get("dep");
 
       const equipo =
-      formData.get("ewui");
+      formData.get("equi");
        
 
     await daoUsuario.
       doc(id).
       set({        
-          depo_rec: deporte,
+          nom_rec: nombre,
           equipo_rec: equipo,
-          nom_rec: nom
+          depo_rec: "Futbol",
+          status_rec: 1
       });
     
     const avatar =
