@@ -67,6 +67,7 @@
           Actualizar Datos
         </button>
       </div>
+      
     </header>
       
     
@@ -123,15 +124,26 @@
       </label>
     </p>
     </div>
-    <mi-footer></mi-footer>
-  </form>
-  
-  <script type="module"
-    forma.ActualizarDatos.
+    <mi-footer></mi-footer>      
+      
+    <script>
+      forma2.ActualizarDatos.
       addEventListener(
-        "click", guarda);
-      src="js/CtrlUsuarioNuevo.js">
-  </script> 
+        "click", function(){
+          import {
+            guardaUsuario
+          } from "./js/usuarios.js";
+          /** @type {HTMLImageElement} */
+          /*const avatar = document.
+          querySelector("#avatar");*/
+
+          const formData =new FormData(forma2);
+          //guardaUsuario(evt,formData, id);
+          guardaUsuario(evt,formData, "cristianorolandoweb50@gmail.com");
+        });
+    </script>
+      
+  </form>
   
 </body>
 </html>
