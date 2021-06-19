@@ -24,9 +24,7 @@ async function cambia(usuario) {
 async function guarda(evt) {
   const formData =
     new FormData(forma);
-  alert("The variable named formData has value:  " + formData);
   const id = "cristianorolandoweb50@gmail.com";
-  alert("The variable named formData has value:  " + id);
   await guardaUsuario(evt,
     formData, id);
 }
