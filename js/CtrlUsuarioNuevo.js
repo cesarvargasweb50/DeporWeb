@@ -10,9 +10,11 @@ import {
 import {
   guardaUsuario,
 } from "./usuarios.js";
-
 /** @type {HTMLFormElement} */
-const forma = document["forma"];
+const forma = document["forma2"];
+/** @type {HTMLImageElement} */
+const avatar = document.
+  querySelector("#avatar");
 
 
 /** @param {Event} evt */
@@ -21,7 +23,7 @@ async function guarda(evt) {
     new FormData(forma);
   alert("The variable named formData has value:  " + formData);
   const id = getString(
-    formData, "cue").trim();
+    formData, "nombre").trim();
   alert("The variable named formData has value:  " + id);
   await guardaUsuario(evt,
     formData, id);
