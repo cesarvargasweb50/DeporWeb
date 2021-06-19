@@ -25,8 +25,6 @@ export async function
     id) {
   try {
     evt.preventDefault();
-    alert(id);
-    alert(formData);
 
       const nombre =
       formData.get("nom");
