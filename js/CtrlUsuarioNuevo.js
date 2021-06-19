@@ -19,11 +19,10 @@ const forma = document["forma"];
 async function guarda(evt) {
   const formData =
     new FormData(forma);
-  console.log("El id es: %o,i");
-
+  alert("The variable named formData has value:  " + formData);
   const id = getString(
     formData, "cue").trim();
-  console.log("El id es: %i,i");
+  alert("The variable named formData has value:  " + id);
   await guardaUsuario(evt,
     formData, id);
 }
