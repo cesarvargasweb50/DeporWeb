@@ -33,16 +33,22 @@
     información del sitio de
     Firebase.
   -->
-  <script
-  import { initializeApp } from "firebase/app";
-import { getPerformance } from "firebase/performance";
+  <script>
+  import firebase from "firebase/app";
+import "firebase/performance";
 
+// TODO: Replace the following with your app's Firebase project configuration
+// See: https://firebase.google.com/docs/web/learn-more#config-object
 const firebaseConfig = {
   // ...
 };
-const app = initializeApp(firebaseConfig);
-const perf = getPerformance(app);
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 </script>
+
+// Initialize Performance Monitoring and get a reference to the service
+const perf = firebase.performance();
   
   <script src="js/init.js">
   </script>
