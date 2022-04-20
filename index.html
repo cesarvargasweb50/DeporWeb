@@ -28,28 +28,12 @@
   <script
     src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js">
     </script>
+  
   <!--
     Configura la app usando la
     información del sitio de
     Firebase.
   -->
-  <script>
-  import firebase from "firebase/app";
-import "firebase/performance";
-
-// TODO: Replace the following with your app's Firebase project configuration
-// See: https://firebase.google.com/docs/web/learn-more#config-object
-const firebaseConfig = {
-  // ...
-};
-
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-
-// Initialize Performance Monitoring and get a reference to the service
-const perf = firebase.performance();
-    </script>
-  
   <script src="js/init.js">
   </script>
   <script type="module"
@@ -62,6 +46,27 @@ const perf = firebase.performance();
     src="cmp/mi-progreso.js">
     </script>
   
+   <!--
+    Agrega las librerias para pruebas
+  -->
+  <script>
+  import { initializeApp } from "firebase/app";
+import { getPerformance } from "firebase/performance";
+
+// TODO: Replace the following with your app's Firebase project configuration
+// See: https://firebase.google.com/docs/web/learn-more#config-object
+const firebaseConfig = {
+  // ...
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+
+// Initialize Performance Monitoring and get a reference to the service
+const perf = getPerformance(app);
+    </script>
+
   
    <link rel="stylesheet"
     href="css/estilos.css">
