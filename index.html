@@ -33,6 +33,17 @@
     información del sitio de
     Firebase.
   -->
+  <script
+  import { initializeApp } from "firebase/app";
+import { getPerformance } from "firebase/performance";
+
+const firebaseConfig = {
+  // ...
+};
+const app = initializeApp(firebaseConfig);
+const perf = getPerformance(app);
+</script>
+  
   <script src="js/init.js">
   </script>
   <script type="module"
